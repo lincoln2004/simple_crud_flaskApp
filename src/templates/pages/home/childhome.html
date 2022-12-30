@@ -1,0 +1,17 @@
+
+
+
+{%block itemList %} 
+
+
+{% for item in itemsList %} 
+
+<article>
+    <p>{{item.name}}</p>
+    <a href="/delete/{{ item.id }}">X</a>
+</article>
+
+{% endfor %}
+
+
+{% endblock itemList %}
